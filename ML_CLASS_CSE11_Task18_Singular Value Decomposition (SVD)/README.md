@@ -15,7 +15,7 @@ The decomposition helps reveal the **intrinsic structure of data** and is common
 | File | Description |
 |-----|-------------|
 | **SVD.ipynb** | Jupyter Notebook implementation of SVD |
-| **SVD_Algorithm.pdf** | Handwritten algorithm steps |
+| **SVD_Algorithm.pdf** | algorithm steps |
 
 ---
 
