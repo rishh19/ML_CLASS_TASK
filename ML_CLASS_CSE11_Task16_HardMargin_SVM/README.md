@@ -12,7 +12,7 @@ The goal is to find the **optimal separating hyperplane** that maximizes the mar
 ## 📁 Files Included
 
 - **HardMargin_SVM.ipynb** → Python implementation of Hard Margin SVM
-- **HardMargin_SVM_Algorithm.pdf** → Handwritten algorithm
+
 
 ---
 
