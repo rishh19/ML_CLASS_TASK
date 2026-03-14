@@ -1,92 +1,126 @@
 # 📊 Principal Component Analysis (PCA)
 
 ## 📌 Task Description
-Implementation of **Principal Component Analysis (PCA)** from scratch using Python.
+This task implements **Principal Component Analysis (PCA)** from scratch using Python.
 
-PCA is a dimensionality reduction technique used to transform high-dimensional data into a smaller number of principal components while preserving maximum variance.
-
----
-
-## 📁 Files Included
-
-- **PCA.ipynb** → Python implementation of PCA
-- **PCA_Algorithm.pdf** → Handwritten algorithm steps
+PCA is a **dimensionality reduction technique** used to transform a dataset with many correlated features into a smaller set of **uncorrelated variables called principal components**, while preserving maximum variance in the data.
 
 ---
 
-## ⚙️ Mathematical Formulation
+## 📁 Files in this Task
 
-Given dataset:
-
-\[
-X = \{x_1, x_2, ..., x_n\}
-\]
-
-Where each \(x_i\) is a feature vector.
+- **PCA.ipynb** → Jupyter Notebook implementation of PCA  
+- **PCA_Algorithm.pdf** → Handwritten algorithm (if required by instructor)
 
 ---
 
-### Step 1: Mean Center Data
+# 🧠 Concept of PCA
 
-\[
-X_{centered} = X - \mu
-\]
+PCA projects the original data onto a new coordinate system such that:
 
-where \( \mu \) is the mean vector.
+- The **first principal component** captures the maximum variance.
+- The **second principal component** captures the next highest variance.
+- Each component is **orthogonal** to the previous one.
 
----
-
-### Step 2: Compute Covariance Matrix
-
-\[
-C = \frac{1}{n-1} X^T X
-\]
+This helps in reducing dimensionality while keeping important information.
 
 ---
 
-### Step 3: Eigen Decomposition
+# ⚙️ Mathematical Formulation
 
-\[
-C v = \lambda v
-\]
+## 1️⃣ Mean Centering
 
-where:
+Compute the mean of each feature:
 
-- \(v\) = eigenvector  
-- \(\lambda\) = eigenvalue
+```
+μ = (1/n) * Σ xi
+```
 
----
+Center the dataset:
 
-### Step 4: Sort Eigenvectors
-
-Eigenvectors are sorted according to decreasing eigenvalues.
-
----
-
-### Step 5: Select Principal Components
-
-Choose the top **k eigenvectors**.
+```
+X_centered = X - μ
+```
 
 ---
 
-### Step 6: Transform Data
+## 2️⃣ Covariance Matrix
 
-\[
-Z = X_{centered} W
-\]
+Compute the covariance matrix:
 
-where \(W\) contains the selected eigenvectors.
+```
+C = (1/(n-1)) * X_centeredᵀ X_centered
+```
 
 ---
 
-## 🎯 Output
+## 3️⃣ Eigen Decomposition
+
+Find eigenvalues and eigenvectors:
+
+```
+C v = λ v
+```
+
+Where:
+
+- `v` = eigenvector  
+- `λ` = eigenvalue  
+
+---
+
+## 4️⃣ Sort Eigenvalues
+
+Sort eigenvalues in descending order:
+
+```
+λ₁ ≥ λ₂ ≥ ... ≥ λₙ
+```
+
+---
+
+## 5️⃣ Select Principal Components
+
+Choose the top **k eigenvectors** corresponding to the largest eigenvalues.
+
+```
+W = [v1, v2, ..., vk]
+```
+
+---
+
+## 6️⃣ Transform the Dataset
+
+Project the data onto the new feature space:
+
+```
+Z = X_centered W
+```
+
+Where:
+
+- `Z` = reduced dimensional dataset
+
+---
+
+# 🎯 Output
 
 - Reduced dimensional dataset
-- Principal components representing maximum variance
+- Principal components capturing maximum variance
+- Visualization of transformed data
 
 ---
 
-## 👨‍💻 Author
+# 📚 Applications of PCA
+
+- Data compression  
+- Noise reduction  
+- Feature extraction  
+- Visualization of high-dimensional datasets
+
+---
+
+# 👨‍💻 Author
 
 **Rishav Kumar Shrivastava**  
 Machine Learning Lab Tasks
