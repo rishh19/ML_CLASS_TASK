@@ -1,44 +1,69 @@
-# K-Means Clustering
+# 📊 K-Means Clustering
 
-## Task Description
+## 📌 Task Description
 
-This task implements **K-Means Clustering**, an unsupervised machine learning algorithm used to group data into clusters.
+This task demonstrates **K-Means Clustering**, a widely used **unsupervised machine learning algorithm** for partitioning a dataset into **k distinct clusters**.
 
-The algorithm iteratively assigns data points to clusters and updates cluster centroids until convergence.
+K-Means groups data points such that points within the same cluster are **more similar to each other** than to points in other clusters. The algorithm iteratively updates cluster assignments and centroids until the clustering structure stabilizes.
 
 ---
 
-## Mathematical Formulation
+# 🧠 Concept
 
-The objective of K-Means is to minimize:
+K-Means clustering represents each cluster using a **centroid**, which is the mean position of all points belonging to that cluster.
 
-J = Σ Σ ||x - μ||²
+The algorithm repeatedly performs two main operations:
+
+- Assign each data point to the **nearest centroid**
+- Update each centroid as the **mean of the points in its cluster**
+
+This process continues until the centroids **no longer change significantly**, indicating that the algorithm has converged.
+
+---
+
+# ⚙️ Mathematical Formulation
+
+K-Means aims to minimize the **within-cluster sum of squared distances (WCSS)**, defined as:
+
+```
+J = Σ Σ ||xᵢ − μⱼ||²
+```
 
 Where:
 
-- x = data point
-- μ = centroid
-- k = number of clusters
+- **xᵢ** → data point  
+- **μⱼ** → centroid of cluster *j*  
+- **||xᵢ − μⱼ||²** → squared Euclidean distance between the data point and centroid  
+- **k** → number of clusters  
+
+The objective is to minimize the total distance between data points and their corresponding cluster centroids.
 
 ---
 
-## Steps of Algorithm
+# 📊 Output
 
-1. Initialize k centroids randomly.
-2. Assign each data point to the nearest centroid.
-3. Compute new centroids using cluster means.
-4. Repeat until centroids stabilize.
+The K-Means algorithm produces:
 
----
+- **Clusters of grouped data points**
+- **Final centroid positions** representing each cluster
 
-## Output
-
-- Clustered data points
-- Final centroids
+These centroids serve as the **representative centers of their clusters**.
 
 ---
 
-## Author
+# 📚 Applications
 
-Rishav Kumar Shrivastava  
-Machine Learning Lab Tasks
+K-Means clustering is widely used in:
+
+- Customer segmentation
+- Image compression and segmentation
+- Document clustering
+- Market analysis
+- Pattern recognition
+
+---
+
+# 👨‍💻 Author
+
+**Rishav Kumar Shrivastava**  
+Machine Learning Class Tasks
