@@ -10,7 +10,7 @@ PCA is a **dimensionality reduction technique** used to transform a dataset with
 ## 📁 Files in this Task
 
 - **PCA.ipynb** → Jupyter Notebook implementation of PCA  
-- **PCA_Algorithm.pdf** → Handwritten algorithm (if required by instructor)
+- **PCA_Algorithm.pdf** → algorithm steps
 
 ---
 
