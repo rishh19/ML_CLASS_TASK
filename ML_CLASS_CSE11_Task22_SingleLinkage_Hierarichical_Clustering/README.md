@@ -62,4 +62,4 @@ Single Linkage Hierarchical Clustering is commonly used in:
 # 👨‍💻 Author
 
 **Rishav Kumar Shrivastava**  
-Machine Learning Lab Tasks
+Machine Learning Class Tasks
