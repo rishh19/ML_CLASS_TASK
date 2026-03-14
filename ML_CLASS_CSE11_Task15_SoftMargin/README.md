@@ -9,6 +9,7 @@ Soft Margin SVM allows some misclassification and introduces a regularization pa
 
 ## 📁 Files Included
 - **SoftMargin_SVM.ipynb** → Python implementation of Soft Margin SVM
+- **SoftdMargin_SVM.pdf** → Algorithm steps
 
 
 ---
