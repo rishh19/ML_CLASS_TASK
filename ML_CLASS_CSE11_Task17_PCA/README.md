@@ -123,4 +123,4 @@ Where:
 # 👨‍💻 Author
 
 **Rishav Kumar Shrivastava**  
-Machine Learning Lab Tasks
+Machine Learning Class Tasks

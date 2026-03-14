@@ -42,4 +42,4 @@ Soft Margin SVM allows some misclassification and introduces a regularization pa
 
 ## 👨‍💻 Author
 **Rishav Kumar Shrivastava**  
-Machine Learning Lab Tasks
+Machine Learning Class Tasks

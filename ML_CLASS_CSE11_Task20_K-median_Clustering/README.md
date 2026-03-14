@@ -70,4 +70,4 @@ K-Medians clustering is useful in:
 # 👨‍💻 Author
 
 **Rishav Kumar Shrivastava**  
-Machine Learning Lab Tasks
+Machine Learning Class Tasks
