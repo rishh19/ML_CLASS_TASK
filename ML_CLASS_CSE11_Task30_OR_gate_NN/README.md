@@ -64,4 +64,4 @@ L = (1/n) Σ (y - ŷ)²
 ## 👨‍💻 Author
 
 **Rishav Kumar Shrivastava**  
-Machine Learning Lab Tasks
+Machine Learning Class Tasks
