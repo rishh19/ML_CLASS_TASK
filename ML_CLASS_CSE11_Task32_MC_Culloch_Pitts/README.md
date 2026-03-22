@@ -50,4 +50,4 @@ y = 0 otherwise
 ## 👨‍💻 Author
 
 **Rishav Kumar Shrivastava**
-ML CLASS TASKS
+Machine Learning Class Tasks
